@@ -1,0 +1,41 @@
+.bgBox {
+  background: url(../../../public/images/image1.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  top: -20px;
+  // .titleText {
+  //   // color: $primary-color;
+  //   margin-bottom: 40px;
+  // }
+  // .imgBox {
+  //   display: flex;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   @media (max-width: 1599px) {
+  //     width: 700px;
+  //   }
+  // .glassImg {
+  //   img {
+  //     width: 418px;
+  //     max-width: 100%;
+  //   }
+  // }
+  //   .wineImg {
+  //     position: relative;
+  //     left: -100px;
+  //     top: 50px;
+  //     img {
+  //       width: 460px;
+  //       max-width: 100%;
+  //     }
+  //   }
+  // }
+  .loginBox {
+    margin-top: 50px;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}

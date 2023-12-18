@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 const Heading = (props: any) => {
   return (
     <>
-      <h1
+      <div
         className={styles.title}
         style={{
           color: props.color ? props.color : "#fff",
@@ -11,7 +11,7 @@ const Heading = (props: any) => {
         }}
       >
         {props.title}
-      </h1>
+      </div>
     </>
   );
 };
