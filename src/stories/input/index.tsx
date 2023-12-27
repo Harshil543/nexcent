@@ -5,6 +5,7 @@ export function Input(props: any) {
     <div className={styles.inputBox}>
       <label className={styles.label}>{props.label}</label>
       <input
+        tabIndex={props.tabIndex}
         className={styles.Input}
         type={props.type}
         placeholder={props.placeholder}

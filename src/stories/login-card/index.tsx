@@ -12,17 +12,19 @@ export function LoginCard(props: any) {
       <div className={style.line}></div>
       <span>Welcome onboard with us!</span>
       <div className={style.inputBox1}>
-        <Input label="Username" />
+        <Input label="Username" tabIndex={1} />
       </div>
       <div className={style.inputBox2}>
-        <Input label="Password" />
+        <Input label="Password" tabIndex={2} />
       </div>
-      <div className={style.forgetText}>Forget Password?</div>
+      <div className={style.forgetText}>
+        <span tabIndex={3}>Forget Password?</span>
+      </div>
       <div className={style.inputBox2}>
-        <Button label="LOGIN" />
+        <Button label="LOGIN" tabIndex={4} />
       </div>
       <div className={style.RegisterText}>
-        New to Logo? <span>Register </span>Here
+        New to Logo? <span tabIndex={5}>Register </span>Here
       </div>
     </div>
   );
