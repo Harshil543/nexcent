@@ -3,15 +3,15 @@ import { RootModel } from ".";
 
 export const Auth = createModel<RootModel>()({
   state: {
-    posts: [],
+    posts: []
   },
   reducers: {
     setPosts(state, payload) {
       return {
         ...state,
-        posts: payload,
+        posts: payload
       };
-    },
+    }
   },
   effects: (dispatch) => ({
     async getAllPosts(payload, state, callback) {
@@ -21,6 +21,6 @@ export const Auth = createModel<RootModel>()({
           dispatch.Auth.setPosts(state);
           callback({ data: json });
         });
-    },
-  }),
+    }
+  })
 });

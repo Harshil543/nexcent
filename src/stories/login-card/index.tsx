@@ -1,9 +1,18 @@
+import { useDispatch } from "react-redux";
 import { Button } from "../button/Button";
 import Heading from "../heading";
 import { Input } from "../input";
 import style from "./index.module.scss";
+import { useEffect } from "react";
 
 export function LoginCard(props: any) {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch.Auth.getAllPosts(null, (res: any) => {
+      console.log(res);
+    });
+  }, []);
+
   return (
     <div className={style.card}>
       <div className={style.login}>
