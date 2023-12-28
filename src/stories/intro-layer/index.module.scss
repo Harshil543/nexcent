@@ -1,24 +1,29 @@
 .container {
   height: 100vh;
+
   overflow: hidden;
   .bgBox {
-    position: relative;
-    bottom: 91px;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
     background: url(../../../public/images/image1.svg);
-    background-position: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     object-fit: cover;
-    object-position: 25% 75%;
+    // object-position: 25% 75%;
     .loginBox {
+      position: relative;
       display: flex;
       align-items: center;
-      margin-top: 50px;
+      justify-content: center;
       height: 100vh;
-      max-width: 540px;
       margin: 0 auto;
-      height: 115vh;
     }
   }
 }
