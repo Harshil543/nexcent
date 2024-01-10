@@ -4,6 +4,7 @@ import Heading from "../heading";
 import { Input } from "../input";
 import style from "./index.module.scss";
 import { useEffect } from "react";
+import { Password } from "../password";
 
 export function LoginCard(props: any) {
   const dispatch = useDispatch();
@@ -21,10 +22,15 @@ export function LoginCard(props: any) {
       <div className={style.line}></div>
       <span>Welcome onboard with us!</span>
       <div className={style.inputBox1}>
-        <Input label="Username" tabIndex={1} />
+        <Input label="Username" placeholder="Enter Username" tabIndex={1} />
       </div>
       <div className={style.inputBox2}>
-        <Input label="Password" tabIndex={2} />
+        <Password
+          type="Password"
+          placeholder="Enter Password"
+          label="Password"
+          tabIndex={2}
+        />
       </div>
       <div className={style.forgetText}>
         <span tabIndex={3}>Forget Password?</span>
