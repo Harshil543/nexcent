@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.card {
+  width: 100%;
+  max-width: 29.9375rem;
+  height: auto;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  border-radius: 27px;
+  background: linear-gradient(
+    109deg,
+    rgba(201, 201, 201, 0.53) 1.57%,
+    rgba(196, 196, 196, 0.1) 100%
+  );
+  backdrop-filter: blur(30px);
+  padding-inline: 30px;
+  padding-bottom: 30px;
+  .login {
+    margin-top: 20px;
+  }
+  span {
+    font-size: 20px;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .line {
+    margin-top: 10px;
+    width: 110px;
+    margin-bottom: 10px;
+    height: 1px;
+    background: #fff;
+  }
+  .inputBox1 {
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+  }
+  .inputBox2 {
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+  }
+  .forgetText {
+    margin-top: 10px;
+    color: #fff;
+    line-height: normal;
+    text-align: end;
+    span {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      cursor: pointer;
+      font-size: 12px;
+    }
+  }
+  .btn {
+    background-color: #a5d9d0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px !important;
+    height: 50px;
+    box-shadow: none !important;
+    div {
+      background-color: #a5d9d0 !important;
+      svg {
+        margin-right: 5px !important;
+      }
+    }
+    span {
+      display: none;
+    }
+
+    div:after {
+      color: black !important;
+      font-size: 15px !important;
+      text-rendering: none;
+      font-family: "Montserrat", sans-serif !important;
+      font-weight: 600 !important;
+      text-transform: uppercase;
+      content: "sign in with google" !important;
+    }
+  }
+  .RegisterText {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    span {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    padding-inline: 20px; /* Adjust padding for smaller screens */
+    padding-block: 20px; /* Adjust padding for smaller screens */
+  }
+}

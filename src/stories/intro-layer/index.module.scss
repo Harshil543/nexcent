@@ -1,0 +1,26 @@
+.container {
+  height: 100vh;
+
+  overflow: hidden;
+  .bgBox {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../../../public/images/image1.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    .loginBox {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0 auto;
+    }
+  }
+}
